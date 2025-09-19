@@ -12,7 +12,7 @@ export const FaqItem = ({ question, answer, defaultOpen = false }: FaqItemProps)
     const [open, setOpen] = useState(defaultOpen)
 
     return (
-        <div className="border rounded-lg shadow-sm">
+        <div className="border border-input rounded-lg shadow-sm">
             <button
                 onClick={() => setOpen(!open)}
                 className="w-full flex justify-between items-center px-4 py-3 text-left font-medium"

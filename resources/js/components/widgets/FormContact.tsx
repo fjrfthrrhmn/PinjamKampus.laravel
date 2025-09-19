@@ -1,5 +1,5 @@
 import { SendIcon } from "lucide-react"
-import { Button, Input, Label } from "../ui"
+import { Button, Input, Label, Textarea } from "@/ui"
 
 export const FormContact = () => {
     return (
@@ -15,7 +15,7 @@ export const FormContact = () => {
                 </div>
                 <div className="space-y-2">
                     <Label>Pesan</Label>
-                    <Input placeholder="Lorem Ipsum Dolor..." />
+                    <Textarea placeholder="Lorem Ipsum Dolor..." />
                 </div>
 
                 <div className="flex items-center justify-end">

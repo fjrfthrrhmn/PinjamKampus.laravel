@@ -1,38 +1,19 @@
-import { Container, FaqItem, Title } from "@/ui"
-
-const FAQS = [
-    {
-        question: "Lorem ipsum dolor, sit amet consectetur?",
-        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora perferendis ea dolore vitae magnam enim dolorem, officia architecto dignissimos illo."
-    },
-    {
-        question: "Lorem ipsum dolor, sit amet consectetur?",
-        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora perferendis ea dolore vitae magnam enim dolorem, officia architecto dignissimos illo."
-    },
-    {
-        question: "Lorem ipsum dolor, sit amet consectetur?",
-        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora perferendis ea dolore vitae magnam enim dolorem, officia architecto dignissimos illo."
-    },
-    {
-        question: "Lorem ipsum dolor, sit amet consectetur?",
-        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora perferendis ea dolore vitae magnam enim dolorem, officia architecto dignissimos illo."
-    },
-    {
-        question: "Lorem ipsum dolor, sit amet consectetur?",
-        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora perferendis ea dolore vitae magnam enim dolorem, officia architecto dignissimos illo."
-    },
-]
+import { Badge, Container, FaqItem, Title } from "@/ui"
+import { FAQs } from "@/data/home"
 
 export const FAQ = () => {
     return (
         <Container>
             <div className="space-y-10 lg:space-y-20">
-                <Title text="Frequently Asked Questions" center />
+                <div className="space-y-4">
+                    <Badge>FAQs</Badge>
+                    <Title text="Jawaban dari Pertayaan Anda" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, quaerat!" />
+                </div>
 
                 <div className="space-y-4">
-                    {FAQS.map((item, i) => {
+                    {FAQs.map((item, i) => {
                         return (
-                            <FaqItem key={i} question={item.question} answer={item.answer} />
+                            <FaqItem key={i} question={item.question} answer={item.answer} defaultOpen={item.defaultOpen} />
                         )
                     })}
                 </div>

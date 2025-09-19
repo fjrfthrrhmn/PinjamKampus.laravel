@@ -7,12 +7,12 @@ export const SocialLinks = () => {
     <>
       <div className="flex gap-4 flex-col">
 
-        {[...Array(1)].map(item => {
+        {[...Array(3)].map(item => {
           return (
             <div key={item} className="flex flex-col gap-2">
               <div className="flex gap-2 items-center">
                 <Mail />
-                <Typography.Text>Email</Typography.Text>
+                <Typography.Text variant="sm/medium">Email</Typography.Text>
               </div>
 
               <Link href={"#"} className="group flex items-end gap-2">

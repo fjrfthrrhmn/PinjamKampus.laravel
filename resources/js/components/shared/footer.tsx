@@ -7,7 +7,7 @@ export const Footer = () => {
             <Container>
                 <div className="space-y-10">
                     <div className="space-y-4">
-                        <Badge>hello</Badge>
+                        <Badge>kontak</Badge>
                         <Title text="Lorem ipsum dolor" description="Lorem ipsum dolor sit amet consectetur adipisicing elit." />
                     </div>
 

@@ -1,11 +1,14 @@
-import { Container, Marquee, Title, Typography } from '@/ui';
+import { Badge, Container, Marquee, Title, Typography } from '@/ui';
 
 export const About = () => {
     return (
         <>
             <Container>
                 <div className="space-y-10 lg:space-y-20">
-                    <Title text="Tentang Kami" center />
+                    <div className="space-y-4">
+                        <Badge>Tentang Kami</Badge>
+                        <Title text="Website Apa Ini" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, quaerat!" />
+                    </div>
 
                     <div className="grid gap-12 lg:grid-cols-2">
                         <div className="flex h-full w-full items-center justify-center">
