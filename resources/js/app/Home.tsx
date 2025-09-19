@@ -1,6 +1,6 @@
+import { AboutSetion, HeroSection } from '@/features/home';
 import { Navigation } from '@/shared';
 import { Head } from '@inertiajs/react';
-import { AboutSetion, HeroSection } from '@/features/home';
 
 export default function HomePage() {
     return (
@@ -8,7 +8,7 @@ export default function HomePage() {
             <Head title="Beranda" />
             <Navigation />
 
-            <div className='pt-4 lg:pt-10 pb-20 space-y-24 lg:space-y-32'>
+            <div className="space-y-24 pt-4 pb-20 lg:space-y-32 lg:pt-10">
                 <HeroSection />
                 <AboutSetion />
             </div>

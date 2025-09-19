@@ -1,17 +1,16 @@
-import { Button, Container, Typography } from "@/ui";
-import { ChevronRightIcon } from "lucide-react";
+import { Button, Container, Typography } from '@/ui';
+import { ChevronRightIcon } from 'lucide-react';
 
 export const Hero = () => {
     return (
         <Container>
             <div className="grid gap-12 lg:grid-cols-2">
-
-                <div className="lg:order-last flex justify-center items-center w-full h-full">
-                    <div className="w-72 h-72 bg-zinc-900 rounded-2xl" />
+                <div className="flex h-full w-full items-center justify-center lg:order-last">
+                    <div className="h-72 w-72 rounded-2xl bg-zinc-900" />
                 </div>
 
-                <div className="flex flex-col gap-6 w-full">
-                    <span className="font-mono bg-blue-500/25 text-blue-500 w-max px-2 rounded">Ada Kami</span>
+                <div className="flex w-full flex-col gap-6">
+                    <span className="w-max rounded bg-blue-500/25 px-2 font-mono text-blue-500">Ada Kami</span>
 
                     <div className="flex flex-col gap-4">
                         <Typography.Title variant="2/bold">
@@ -32,10 +31,11 @@ export const Hero = () => {
                     </div>
 
                     <div className="flex flex-col lg:flex-row">
-                        <Button>Ajaukan Sekarang <ChevronRightIcon /></Button>
+                        <Button>
+                            Ajaukan Sekarang <ChevronRightIcon />
+                        </Button>
                     </div>
                 </div>
-
             </div>
         </Container>
     );
