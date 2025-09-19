@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200,300,400;500;600;700,800,900&display=swap');
+
 @import 'tailwindcss';
 
 @plugin 'tailwindcss-animate';
@@ -8,6 +10,10 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+    --font-sans: 'Roboto', sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+    --font-body: 'Inter', sans-serif;
+
     --radius-sm: calc(var(--radius) - 4px);
 
     --radius-md: calc(var(--radius) - 2px);
@@ -80,7 +86,7 @@
 }
 
 :root {
-    --radius: 0.625rem;
+    --radius: 1rem;
 
     --background: oklch(1 0 0);
 
@@ -209,11 +215,12 @@
     --sidebar-ring: oklch(0.556 0 0);
 }
 
-@layer base {
+@layer theme {
     * {
         @apply border-border outline-ring/50;
     }
+
     body {
-        @apply bg-background text-foreground;
+        @apply bg-background font-sans text-foreground;
     }
 }

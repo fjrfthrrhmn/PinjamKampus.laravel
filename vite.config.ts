@@ -19,6 +19,23 @@ export default defineConfig({
     },
     resolve: {
         alias: {
+            '~': resolve(__dirname, 'resources/js'),
+            '@/ui': resolve(__dirname, 'resources/js/components/ui'),
+            '@/features': resolve(__dirname, 'resources/js/components/features'),
+            '@/widgets': resolve(__dirname, 'resources/js/components/widgets'),
+            '@/shared': resolve(__dirname, 'resources/js/components/shared'),
+
+            '@/constants': resolve(__dirname, 'resources/js/constants'),
+            '@/config': resolve(__dirname, 'resources/js/constants/config'),
+            '@/data': resolve(__dirname, 'resources/js/constants/data'),
+
+            '@/helpers': resolve(__dirname, 'resources/js/helpers'),
+            '@/lib': resolve(__dirname, 'resources/js/lib'),
+            
+            '@/hooks': resolve(__dirname, 'resources/js/hooks'),
+            '@/services': resolve(__dirname, 'resources/js/services'),
+            '@/types': resolve(__dirname, 'resources/js/types'),
+
             'ziggy-js': resolve(__dirname, 'vendor/tightenco/ziggy'),
         },
     },

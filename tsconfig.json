@@ -107,16 +107,29 @@
         /* Completeness */
         // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
         "skipLibCheck": true /* Skip type checking all .d.ts files. */,
-        "baseUrl": ".",
+        "baseUrl": "resources/js",
         "paths": {
-            "@/*": ["./resources/js/*"],
-            "ziggy-js": ["./vendor/tightenco/ziggy"]
+            "~/*": ["*"],
+
+            "@/ui": ["components/ui/index"],
+            "@/widgets": ["components/widgets/index"],
+            "@/shared": ["components/shared/index"],
+            "@/features/*": ["components/features/*"],
+
+            "@/config/*": ["constants/config/*"],
+            "@/constants/*": ["constants/*"],
+            "@/data/*": ["constants/data/*"],
+            
+            "@/helpers/*": ["helpers/*"],
+            "@/lib/*": ["lib/*"],
+
+            "@/hooks/*": ["hooks/*"],
+            "@/services/*": ["services/*"],
+            "@/types/*": ["types/*"],
+
+            "ziggy-js": ["../vendor/tightenco/ziggy"]
         },
         "jsx": "react-jsx"
     },
-    "include": [
-        "resources/js/**/*.ts",
-        "resources/js/**/*.d.ts",
-        "resources/js/**/*.tsx",
-    ]
+    "include": ["resources/js/**/*.ts", "resources/js/**/*.d.ts", "resources/js/**/*.tsx"]
 }
