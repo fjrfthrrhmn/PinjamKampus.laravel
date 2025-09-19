@@ -1,13 +1,17 @@
 import { Navigation } from '@/shared';
 import { Head } from '@inertiajs/react';
-import { HeroSection } from '@/features/home';
+import { AboutSetion, HeroSection } from '@/features/home';
 
 export default function HomePage() {
     return (
         <>
             <Head title="Beranda" />
             <Navigation />
-            <HeroSection />
+
+            <div className='pt-10 pb-20 space-y-24 lg:space-y-32'>
+                <HeroSection />
+                <AboutSetion />
+            </div>
         </>
     );
 }

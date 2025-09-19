@@ -1,5 +1,6 @@
 export * from './button'
 export * from './navbar'
+export * from './marquee'
 export * from './label'
 export * from './input'
 export * from './form'

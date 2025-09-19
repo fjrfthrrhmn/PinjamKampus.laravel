@@ -1,4 +1,4 @@
-import { Container, NavbarDesktop, NavbarMobile } from '@/ui';
+import { NavbarDesktop, NavbarMobile } from '@/ui';
 import { BUTTONS, NAV_ITEMS } from "@/data/home";
 import { useCallback, useState } from 'react';
 
@@ -15,10 +15,8 @@ export const Navigation = () => {
 
     return (
         <>
-            <Container>
-                <NavbarDesktop navItems={NAV_ITEMS} isActive='/' buttonItems={BUTTONS} />
-                <NavbarMobile isOpen={open} onClick={() => handleOpen(open)} navItems={NAV_ITEMS} buttonItems={BUTTONS} />
-            </Container>
+            <NavbarDesktop navItems={NAV_ITEMS} isActive='/' buttonItems={BUTTONS} />
+            <NavbarMobile isOpen={open} onClick={() => handleOpen(open)} navItems={NAV_ITEMS} buttonItems={BUTTONS} />
         </>
     );
 };

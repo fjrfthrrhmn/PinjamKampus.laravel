@@ -21,6 +21,7 @@ type TitleProps = {
 	description?: string
 	variant?: TitleVariant
 	as?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" // semantic control
+	center?: boolean
 } & React.ComponentProps<"div">
 
 export const Title = ({
@@ -29,9 +30,10 @@ export const Title = ({
 	variant = "3/extrabold",
 	children,
 	className,
+	center,
 	...props
 }: TitleProps) => {
-	const classes = cn("", children && "md:col-span-2", className)
+	const classes = cn("", children && "md:col-span-2", center && "text-center", className)
 
 	const content = (
 		<>
