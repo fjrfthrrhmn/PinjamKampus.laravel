@@ -4,7 +4,7 @@ export const About = () => {
     return (
         <>
             <Container>
-                <div className="space-y-20">
+                <div className="space-y-10 lg:space-y-20">
                     <Title text="Tentang Kami" center />
 
                     <div className="grid gap-12 lg:grid-cols-2">

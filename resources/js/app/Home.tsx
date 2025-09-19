@@ -8,7 +8,7 @@ export default function HomePage() {
             <Head title="Beranda" />
             <Navigation />
 
-            <div className='pt-10 pb-20 space-y-24 lg:space-y-32'>
+            <div className='pt-4 lg:pt-10 pb-20 space-y-24 lg:space-y-32'>
                 <HeroSection />
                 <AboutSetion />
             </div>

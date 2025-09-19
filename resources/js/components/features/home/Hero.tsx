@@ -1,5 +1,5 @@
 import { Button, Container, Typography } from "@/ui";
-import { ChevronRightIcon, MoveRightIcon } from "lucide-react";
+import { ChevronRightIcon } from "lucide-react";
 
 export const Hero = () => {
     return (
@@ -11,7 +11,7 @@ export const Hero = () => {
                 </div>
 
                 <div className="flex flex-col gap-6 w-full">
-                    <span>helloworld</span>
+                    <span className="font-mono bg-blue-500/25 text-blue-500 w-max px-2 rounded">Ada Kami</span>
 
                     <div className="flex flex-col gap-4">
                         <Typography.Title variant="2/bold">
