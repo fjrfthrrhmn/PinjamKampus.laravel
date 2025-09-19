@@ -4,12 +4,12 @@ import { ChevronRightIcon } from 'lucide-react';
 export const Hero = () => {
     return (
         <Container>
-            <div className="grid gap-12 lg:grid-cols-2">
-                <div className="flex h-full w-full items-center justify-center lg:order-last">
-                    <div className="h-72 w-72 rounded-2xl bg-zinc-900" />
+            <div className="w-full grid gap-y-12 lg:grid-cols-2">
+                <div className="flex h-full items-center justify-center lg:order-last">
+                    <div className="sm:h-72 w-full h-44 sm:w-72 rounded-2xl bg-zinc-900" />
                 </div>
 
-                <div className="flex w-full flex-col gap-6">
+                <div className="flex flex-col gap-6">
                     <span className="w-max rounded bg-blue-500/25 px-2 font-mono text-blue-500">Ada Kami</span>
 
                     <div className="flex flex-col gap-4">
