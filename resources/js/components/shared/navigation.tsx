@@ -15,7 +15,7 @@ export const Navigation = () => {
         (state: boolean) => {
             setOpen(!state);
         },
-        [open],
+        [],
     );
 
     return (
